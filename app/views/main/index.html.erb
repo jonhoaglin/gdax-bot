@@ -1,5 +1,9 @@
 <div>
-	<span>Current Stats</span>
+	This is the front end for a currency exchange bot. It is connected on the backend to <a href="http://gdax.com">GDAX.com</a> using their api with Ruby on Rails. It monitors the current price of Bitcoin(BTC) and will buy Bitcoin if the price is increasing, and sell when the price decreases. My initial investment was $15 USD and my current account value is listed below.
+</div>
+
+<div>
+	<span>Current Stats as of: <%= Time.now %></span>
 	<table>
 		<tr>
 			<th>
