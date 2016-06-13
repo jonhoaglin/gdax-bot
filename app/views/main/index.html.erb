@@ -1,0 +1,63 @@
+<div>
+	<span>Current Stats</span>
+	<table>
+		<tr>
+			<th>
+				Spot Price
+			</th>
+			<th>
+				Movement (10s)
+			</th>
+			<th>
+				USD Avail
+			</th>
+			<th>
+				BTC Avail
+			</th>
+			<th>
+				ETH Avail
+			</th>
+			<th>
+				Total Value (USD)
+			</th>
+		</tr>
+		<%= render @stat %>
+		<tr>
+			<td colspan="6">
+				Total Profit: $<%= @orders.map(&:profit).sum.round(4) %>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<div>
+	<span>Order Book</span>
+	<table>
+		<tr>
+			<th>
+				Quantity
+			</th>
+			<th>
+				Buy Price
+			</th>
+			<th>
+				Sell Price
+			</th>
+			<th>
+				Difference
+			</th>
+			<th>
+				Fees
+			</th>
+			<th>
+				Profit
+			</th>
+			<th></th>
+			<th>
+				Running Ledger
+			</th>
+		</tr>
+		<%= render @orders %>
+	</table>
+</div>
+

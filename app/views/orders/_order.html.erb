@@ -1,0 +1,28 @@
+<tr>
+	<td>
+		<%= order.quantity %>
+	</td>
+	<td>
+		$<%= order.buy.round(4) %>
+	</td>
+	<td>
+		<% if order.sell.blank? %>
+			Target: $<%= (order.buy+order.fees*200).round(4) %>
+		<% else %>
+			<%= order.sell.round(4) %>
+		<% end %>
+	</td>
+	<td>
+		$<%= order.diff.round(4) unless order.sell.blank? %>
+	</td>
+	<td>
+		$<%= (order.fees.round(4) * -1) %>
+	</td>
+	<td>
+		$<%= order.profit.round(4) unless order.sell.blank? %>
+	</td>
+	<td></td>
+	<td>
+		$<%= order.ledger.round(4) unless order.ledger.blank? %>
+	</td>
+</tr>

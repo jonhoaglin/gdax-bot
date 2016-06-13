@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  spot: 1.5
+  usd_avail: 1.5
+  usd_bal: 1.5
+  btc_avail: 1.5
+  btc_bal: 1.5
+  move: 1.5
+
+two:
+  spot: 1.5
+  usd_avail: 1.5
+  usd_bal: 1.5
+  btc_avail: 1.5
+  btc_bal: 1.5
+  move: 1.5
